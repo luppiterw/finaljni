@@ -7,7 +7,7 @@ public class FinalNative
 {
     static
     {
-        System.loadLibrary("app");
+        System.loadLibrary("java2jni");
     }
     public static native int print();
 }
