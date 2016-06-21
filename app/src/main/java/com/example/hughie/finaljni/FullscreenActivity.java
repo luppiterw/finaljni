@@ -5,8 +5,11 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import java2jni.FinalNative;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -116,6 +119,7 @@ public class FullscreenActivity extends AppCompatActivity {
         // created, to briefly hint to the user that UI controls
         // are available.
         delayedHide(100);
+        Log.d("Hughie", "************ = " + FinalNative.print());
     }
 
     private void toggle() {
