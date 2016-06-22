@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import java2jni.FinalNative;
+import secjava2jni.SecondFinalNative;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -119,7 +120,8 @@ public class FullscreenActivity extends AppCompatActivity {
         // created, to briefly hint to the user that UI controls
         // are available.
         delayedHide(100);
-        Log.d("Hughie", "************ = " + FinalNative.print());
+        Log.d("Hughie", "************ default = " + FinalNative.print());
+        Log.d("Hughie", "************ second = " + SecondFinalNative.print());
     }
 
     private void toggle() {
